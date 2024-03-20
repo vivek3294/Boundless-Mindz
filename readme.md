@@ -1,4 +1,4 @@
-# Boundless Minds
+# Boundless Mindz
 
 Boundless Minds is a groundbreaking project aimed at revolutionizing inclusive education for individuals with disabilities. Our platform offers a seamless learning experience, tailored for the blind, deaf, and mute communities. Leveraging cutting-edge technologies such as voice-guided navigation, sign language interpretation, and text-to-speech capabilities, Boundless Minds ensures accessibility for all learners.
 
