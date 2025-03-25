@@ -2,10 +2,10 @@ pipeline {
     agent any
     stages {
         stage('Checkout Code') {
-            steps {
-                git 'https://github.com/vivek3294/Boundless-Mindz'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/vivek3294/Boundless-Mindz.git'
+    }
+}
         stage('Build') {
             steps {
                 sh 'npm install'  // Install dependencies
