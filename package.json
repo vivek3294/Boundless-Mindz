@@ -2,5 +2,8 @@
     "name": "sandpack-project",
     "main": "/index.html",
     "dependencies": {},
-    "devDependencies": {}
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"No tests specified\" && exit 0"
+    }
 }
