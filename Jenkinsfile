@@ -2,25 +2,24 @@ pipeline {
     agent any
     stages {
         stage('Checkout Code') {
-    steps {
-        git branch: 'main', url: 'https://github.com/vivek3294/Boundless-Mindz.git'
-    }
-}
+            steps {
+                git branch: 'main', url: 'https://github.com/vivek3294/Boundless-Mindz.git'
+            }
+        }
         stage('Build') {
             steps {
-                sh 'npm install'  // Install dependencies
+                bat 'npm install'  // Use 'bat' for Windows (instead of 'sh')
             }
         }
         stage('Test') {
             steps {
-                sh 'npm test'   // Run tests
+                bat 'npm test'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'pm2 restart server.js'  // Restart the app using PM2
+                bat 'pm2 restart server.js'  // Change this to your actual deployment command
             }
         }
     }
 }
- 
